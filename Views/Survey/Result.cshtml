@@ -1,0 +1,36 @@
+@using Dojo_Surey_With_Validations.Models
+@model Survey
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1 style="text-decoration: underline; margin-bottom: 1rem;">Submitted Info</h1>
+        <div class="info">
+            <h2>Name:</h2>
+            <h2>@Model.Name</h2>
+        </div>
+        <div class="info">
+            <h2>Dojo Location:</h2>
+            <h2>@Model.Location</h2>
+        </div>
+        <div class="info">
+            <h2>Favorite Language:</h2>
+            <h2>@Model.Language</h2>
+        </div>
+        <div style="margin: 0.5rem;">
+            <h2>Comment:</h2>
+            <p>@Model.Comment</p>
+        </div>
+    </div>
+</body>
+
+</html>
